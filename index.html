@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <main>
+            <section id="container">
+                <div id="calc">
+                    <form>
+                        <div id="result">
+                            <div id="history">
+                                    <input type="text" id="history-val" readonly>
+                            </div>
+                            <div id="output">
+                                    <input type="text" id="output-val" readonly>
+                            </div>
+                        </div>
+
+
+                        <div id="inp">
+
+                            <input type="button" value="C" class="operator" onclick="clearAll()">
+                            <input type="button" value="." class="operator" onclick="test1(this)">
+                            <input type="button" value="/" class="operator" onclick="test3(this)">
+                            <input type="button" value="%" class="operator" onclick="test3(this)">
+
+                            <input type="button" value="7" class="number" onclick="test1(this)">
+                            <input type="button" value="8" class="number" onclick="test1(this)">
+                            <input type="button" value="9" class="number" id="9" onclick="test1(this)">
+                            <input type="button" value="*" class="operator" onclick="test3(this)">
+
+                            <input type="button" value="4" class="number" onclick="test1(this)">
+                            <input type="button" value="5" class="number" onclick="test1(this)">
+                            <input type="button" value="6" class="number" onclick="test1(this)">
+                            <input type="button" value="-" class="operator" onclick="test3(this)">
+
+                            <input type="button" value="1" class="number" onclick="test1(this)">
+                            <input type="button" value="2" class="number" onclick="test1(this)">
+                            <input type="button" value="3" class="number" onclick="test1(this)">
+                            <input type="button" value="+" class="operator" onclick="test3(this)">
+                
+                            <input type="button" value="" class="empty">
+                            <input type="button" value="0" class="number" onclick="test1(this)">
+                            <input type="button" value="" class="empty">
+                            <input type="button" value="=" class="operator" onclick="test2()">
+
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <script src="js/calc.js"></script>
+    </body>
+</html>
